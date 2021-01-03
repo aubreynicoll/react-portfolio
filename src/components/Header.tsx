@@ -1,7 +1,9 @@
 import React from 'react';
 
+const linkClassName = 'py-2 md:py-4 px-4 md:px-8  hover:bg-gray rounded-lg';
+
 const Header: React.FC = () => {
-  const linkClassName = "py-1 px-5 hover:bg-gray rounded-lg";
+  
 
   return (
     <div className="Header m-10 py-10">
