@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const Contact: React.FC = () => {
-  return (
-    <div className="Contact" id="contact">
-      Contact
-    </div>
-  );
-};
+const Contact: React.FC = () => (
+  <div className="Contact" id="contact">
+    Contact
+  </div>
+);
 
 export default Contact;
