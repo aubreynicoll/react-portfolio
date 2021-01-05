@@ -2,7 +2,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'hero-pattern': "url('./assets/images/hero_bg1.png')"
+      })
+    },
     backgroundColor: theme => ({
       ...theme('colors'),
       black: '#121212',

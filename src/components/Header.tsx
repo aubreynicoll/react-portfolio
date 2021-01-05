@@ -22,7 +22,7 @@ const Header: React.FC = () => (
           </a>
         </li>
         <li>
-          <a href="./assets/pdfs/Resume - Aubrey Nicoll.pdf" target="_blank" rel="noreferrer" className={linkClassName}>
+          <a href="./assets/pdfs/resume.pdf" target="_blank" rel="noreferrer" className={linkClassName}>
             Resume
           </a>
         </li>
