@@ -10,10 +10,13 @@
     background: -webkit-linear-gradient(45deg,  #fff832 0%,#2989d8 52%,#ff89f5 100%);
     background: linear-gradient(45deg,  #fff832 0%,#2989d8 52%,#ff89f5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff832', endColorstr='#ff89f5',GradientType=1 );
-
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    @apply my-5 text-xl md:text-3xl;
   }
 }
 
