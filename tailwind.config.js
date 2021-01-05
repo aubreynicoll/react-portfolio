@@ -12,7 +12,13 @@ module.exports = {
       black: '#121212',
       gray: '#1c1c1c',
       danger: '#ff0000'
-    })
+    }),
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'hero-pattern': '60%'
+    }
   },
   variants: {
     extend: {},
