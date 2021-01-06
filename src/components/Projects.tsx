@@ -1,5 +1,7 @@
 import React from "react";
 import pokebookScreenshot from "../assets/images/pokebook_screenshot.png";
+import githubIcon from "../assets/icons/github.svg";
+import linkIcon from "../assets/icons/link.svg";
 
 const Projects: React.FC = () => (
   <div className="Projects" id="projects">
@@ -21,11 +23,22 @@ const Projects: React.FC = () => (
               React
             </span>
             <span className="border border-gray-500 px-2 py-1 rounded-lg text-sm">
+              Typescript
+            </span>
+            <span className="border border-gray-500 px-2 py-1 rounded-lg text-sm">
               GraphQL
             </span>
             <span className="border border-gray-500 px-2 py-1 rounded-lg text-sm">
               MongoDB
             </span>
+          </div>
+          <div className="w-auto flex space-x-5 relative">
+            <a href="https://github.com/aubreynicoll/pokebook" target="_blank" rel="noreferrer">
+              <img src={githubIcon} alt="Link to GitHub" width="24px" height="24px" />
+            </a>
+            <a href="https://young-lowlands-97512.herokuapp.com/" target="_blank" rel="noreferrer">
+              <img src={linkIcon} alt="Link to App" width="24px" height="24px" />
+            </a>
           </div>
         </div>
       </div>
