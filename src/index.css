@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-black text-white;
+  }
+  
   h1 {
     @apply my-5 py-1 text-5xl font-bold md:text-7xl;
     background: #fff832;
