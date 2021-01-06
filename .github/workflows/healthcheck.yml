@@ -21,7 +21,7 @@ jobs:
         retry-delay: 10s # Optional, only applicable to max-attempts > 1
     
     - name: Slack Notification
-        if: failure()
+        if: ${{ failure() }}
         uses: 8398a7/action-slack@b6a4c791ce0c137843eb11e038f855cf567014dc
         with:
           status: ${{ job.status }}
