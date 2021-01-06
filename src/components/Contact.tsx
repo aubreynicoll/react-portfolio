@@ -24,31 +24,30 @@ const Contact: React.FC = () => (
         </p>
 
         <div className="flex flex-row justify-start space-x-1 md:space-x-10">
-
           <a href="https://www.linkedin.com/in/aubrey-nicoll-37781477/" target="_blank" rel="noreferrer">
-            <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
+            <span className="flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
               <img src={linkedinIcon} alt="LinkedIn icon" width="24px" height="24px" className="hidden md:inline mr-1" />
               LinkedIn
             </span>
           </a>
 
           <a href="https://github.com/aubreynicoll" target="_blank" rel="noreferrer">
-            <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
+            <span className="flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
               <img src={githubIcon} alt="GitHub icon" width="24px" height="24px" className="hidden md:inline mr-1" />
               GitHub
             </span>
           </a>
 
           <a href="https://codepen.io/zombies808myneighbors" target="_blank" rel="noreferrer">
-            <span className="mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
+            <span className="flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
               <img src={codepenIcon} alt="Codepen icon" width="24px" height="24px" className="hidden md:inline mr-1" />
               CodePen
             </span>
           </a>
-
         </div>
+
       </div>
-      <div className=" w-6/12">
+      <div className="w-6/12">
         <img src={contactIllustration} alt="Contact Illustration" className="rounded-3xl" />
       </div>
     </div>

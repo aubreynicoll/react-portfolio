@@ -28,8 +28,7 @@ const Hero: React.FC = () => {
         <p className="tracking-wide leading-relaxed">
           Code drives me.
           I&apos;m fascinated by the natural intersection of design, architecture, and logic.
-          Each new project is an adventure.
-          Never stop learning.
+          Each new project is an adventure, a new opportunity to learn.
         </p>
       </div>
       <div className="ml-auto mr-32 w-96">
