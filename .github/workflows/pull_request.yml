@@ -1,0 +1,27 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  pull_request_checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Lint
+        run: npm run lint
+      - name: Slack Notification
+        if: always()
+        uses: 8398a7/action-slack@b6a4c791ce0c137843eb11e038f855cf567014dc
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
