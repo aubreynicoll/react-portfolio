@@ -16,12 +16,6 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
       - name: Bump version and push tag
         if: ${{ contains(join(github.event.commits.*.message, ' '), '#skip') == false }}
         uses: anothrNick/github-tag-action@eca2b69f9e2c24be7decccd0f15fdb1ea5906598
@@ -29,6 +23,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
           DEFAULT_BUMP: patch
+
+      - name: Install Dependencies
+        if: ${{ contains(join(github.event.commits.*.message, ' '), '#skip') == false }}
+        run: npm install
+
+      - name: Build
+        if: ${{ contains(join(github.event.commits.*.message, ' '), '#skip') == false }}
+        run: npm run build
 
       - name: Deploy via FTP
         if: ${{ contains(join(github.event.commits.*.message, ' '), '#skip') == false }}
