@@ -14,8 +14,8 @@ const Projects: React.FC = () => (
         <div className="flex flex-col max-w-md space-y-5">
           <h3>PokéBook</h3>
           <p>
-            Pokémon-themed social media platform,
-            built with React, Typescript, GraphQL, and MongoDB.
+            Pokémon Pokédex, currently expanding into a faux social media platform.
+            Built with React, Typescript, and GraphQL.
             Deployed with GitHub Actions and Heroku.
           </p>
           <div className="flex flex-row space-x-4">
