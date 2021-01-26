@@ -19,7 +19,8 @@ module.exports = {
       'cover': 'cover',
       'contain': 'contain',
       'hero-pattern': '70%',
-      'hero-pattern-md': '60%'
+      'hero-pattern-md': '60%',
+      'project-pattern-1': '100%'
     }
   },
   variants: {
