@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'hero-pattern': "url('./assets/images/hero_bg1.png')",
-        'project-pattern-1': "url('./assets/images/project_backdrop1.png')"
       })
     },
     backgroundColor: theme => ({

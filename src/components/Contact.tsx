@@ -38,7 +38,7 @@ const Contact: React.FC = () => (
             </span>
           </a>
 
-          <a href="https://codepen.io/zombies808myneighbors" target="_blank" rel="noreferrer">
+          <a href="https://codepen.io/aubreynicoll" target="_blank" rel="noreferrer">
             <span className="flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm">
               <img src={codepenIcon} alt="Codepen icon" width="24px" height="24px" className="hidden md:inline mr-1" />
               CodePen
